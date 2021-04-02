@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Git</title>
+    <link rel="stylesheet" href="gitsk.css">
+</head>
+<body>
+    <div></div>
+    <h2><p>1.Mi az a git?</p></h2>
+    <b><span>A Git egy nyílt forráskódú, elosztott verziókezelő szoftver,
+        vagy másképpen egy szoftverforráskód-kezelő rendszer, amely a sebességre helyezi a hangsúlyt.
+         A Gitet eredetileg Linus Torvalds fejlesztette ki a Linux kernel fejlesztéséhez.
+          Minden Git munkamásolat egy teljes értékű repository teljes verziótörténettel és teljes revíziókövetési
+          lehetőséggel, amely nem függ a hálózat elérésétől vagy központi szervertől.<br/>Mivel minden egyes fejlesztő lényegében teljes biztonsági másolattal rendelkezik az
+          egész projektről, ezért a szerver meghibásodásának, a tároló megsérülésének vagy
+          bármilyen bekövetkező adatvesztésnek a kockázata sokkal kisebb, mint a központosított
+          rendszerek által támasztott pont-hozzáférés esetében.A Git hasonló egy hash-fához, azonban az egyes csomópontokon és leveleken
+          hozzáadott adatokkal rendelkezik.
+          <br/>A Git célja az adott projekt menedzselése, ill. az adatok változásának nyomon
+          követése. Ezen információk adatstruktúrákban történő tárolását repository-nak, röviden
+          repo-nak, avagy lokális adatbázisnak nevezik</span></b>
+          <h2><p>1.Mire/hogyan használjuk?</p></h2>
+       <p><b><span> 
+        A git fájlrendszerként történő elképzelése a legegyszerűbb.
+         Verzió (COMMIT) létrehozásakor csak meg kell szereznünk a projekt aktuális verzióját,
+          és át kell másolnunk egy könyvtárba, amelynek neve felhasználónévből és dátumból áll.
+           Ezután további fejlesztéseket hajtunk végre, és ha kétszer is gondolkodunk, létrehozunk egy új verziót,
+            vagyis az aktuális fájlt újra átmásoljuk a könyvtárba. Ezután megtekinthetjük a verziót, megnézhetjük,
+             mi változott, vagy szükség esetén visszatérhetünk egy régebbi verzióra.
+              A verzió mellett van egy másik fogalom a Gitben, nevezetesen az ág. 
+              Fiók létrehozásakor a teljes projekt és annak verziója külön könyvtárba másolódik, 
+              és megadhat egy opcionális nevet. Ezért a Git egy fájlrendszer, amely ágakat tartalmaz ígéretekkel 
+              (egyelőre könyvtárként kezeljük őket). Mivel mindig egy bizonyos ág alatt vagyunk, van egy alapértelmezett
+               elágazás, amelyet masternek hívunk.A working directory, working copy vagy history az adott projektről,
+               gyökérkönyvtáráról – amelyben a fájlok, forráskódok és mappák találhatóak – egy
+               változatot, verziót, állapotot tartalmaz.Snapshot egy adott pillanatban, időpontban a könyvtárak, fájlok aktuális állapotát,
+               tartalmát, verzióját jelenti. A pillanatkép úgy képzelhető el, mint egy fotó a teljes kódról.
+               Staged, cached jelzővel illetik azokat a fájlokat, amelyek módosítva lettek és az
+               állapotukról, verziójukról, tartalmukról snapshot készült.
+               Commit-nak nevezik azt a folyamatot, amely során a Git a megjelölt és a staging areaban lévő fájlokról készült snapshot-okat a .git könyvtárában, azaz a lokális adatbázisában
+               tárolja el biztonságosan, és egy SHA-1 hash kódot generál, amellyel a snapshot-okra
+               hivatkozik. Tracked megjelöléssel szerepelnek azok az adatok, amelyek tartalmának változását a
+               Git nyomon követi.
+            </span></b></p>
+               <p><span>A tracked fájloknak 3 további állapotuk lehetséges:</span> </p>
+               <ul>
+                   <li>modified: a fájl módosult a legutóbbi commit óta, de az aktuális verziója még
+                    nincs a staging area-ban (nem készült róla snapshot), ill. a következő commitnak nem lesz része</li>
+                   <li>unmodified: a fájl nem módosult a legutóbbi commit óta (tiszta)</li>
+                   <li>staged, cached: a fájl módosult a legutóbbi commit óta és már snapshot is
+                    készült róla (a staging area része), a következő commit során el lesz tárolva az
+                    adatbázisban</li>
+               </ul>
+               <p>
+                   <span>Források:
+                      <p><a href="https://medium.com/envienta-magyarorsz%C3%A1g/git-%C3%A9s-github-gyorstalpal%C3%B3-f2d78a732deb">1.</a></p>
+                      <p><a href="https://people.maths.bris.ac.uk/~mb13434/git/miagit.html">2.</a></p>
+                      <p><a href="https://hu.wikipedia.org/wiki/Git">3.</a></p> 
+                      <p><a href="http://math.bme.hu/~balazs/git/gitcml.html">4.</a></p>   
+                      <p><a href="http://lf.estontorise.hu/archives/288">5.</a></p> 
+                   </span>
+                   
+               </p>
+        
+       <p align="right"><a  href="gitsk.html"><img src="prev.png" width="160" height="100"></a></p> 
+</body>
+
+</html>
